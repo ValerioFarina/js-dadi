@@ -2,17 +2,32 @@
     <head>
         <meta charset="utf-8">
         <title>Gioco dadi</title>
+        <script src="https://kit.fontawesome.com/1a8486ce17.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h3>
-            Esito lancio giocatore1: <span id="roll-dice-1"></span>
-        </h3>
+        <div id="roll">
+            <h1>CLICCA QUI PER LANCIARE I DADI</h1>
+            <i class="fas fa-arrow-down"></i>
+            <a href="index.html"><i class="fas fa-dice"></i></a>
+        </div>
 
-        <h3>
-            Esito lancio giocatore2: <span id="roll-dice-2"></span>
-        </h3>
+        <div id="outcomes">
+            <h2>
+                Esito lancio giocatore1: <br>
+                <span id="roll-dice-1"></span>
+            </h2>
 
-        <h1 id="winner"></h1>
+            <h2>
+                Esito lancio giocatore2: <br>
+                <span id="roll-dice-2"></span>
+            </h2>
+        </div>
+
+        <div id="final-result">
+            <h1 id="winner"></h1>
+        </div>
+
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
