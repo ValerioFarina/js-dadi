@@ -11,14 +11,14 @@ var rollDice1 = Math.floor(Math.random() * 6) + 1;
 var rollDice2 = Math.floor(Math.random() * 6) + 1;
 
 // comunico gli esiti dei lanci
-console.log('Esito lancio giocatore1: ' + rollDice1);
-console.log('Esito lancio giocatore2: ' + rollDice2);
+document.getElementById('roll-dice-1').innerHTML = rollDice1;
+document.getElementById('roll-dice-2').innerHTML = rollDice2;
 
 // controllo chi ha vinto: vince chi ottiene dal lancio un numero maggiore
 if (rollDice1 > rollDice2) {
-    console.log('Ha vinto il giocatore1 !!!');
+    document.getElementById('winner').innerHTML = 'Ha vinto il giocatore1 !!!';
 } else if (rollDice2 > rollDice1) {
-    console.log('Ha vinto il giocatore2 !!!');
+    document.getElementById('winner').innerHTML = 'Ha vinto il giocatore2 !!!';
 } else {
-    console.log('Patta !!!');
+    document.getElementById('winner').innerHTML = 'Patta !!!';
 }
