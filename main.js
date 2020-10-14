@@ -7,4 +7,9 @@
 // genero un numero casuale da 1 a 6 per simulare il lancio del primo giocatore
 var rollDice1 = Math.floor(Math.random() * 6) + 1;
 
-console.log(rollDice1); 
+console.log('Esito lancio giocatore1: ' + rollDice1);
+
+// genero un numero casuale da 1 a 6 per simulare il lancio del secondo giocatore
+var rollDice2 = Math.floor(Math.random() * 6) + 1;
+
+console.log('Esito lancio giocatore2: ' + rollDice2);
